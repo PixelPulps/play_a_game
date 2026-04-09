@@ -1,13 +1,22 @@
+/* =========================
+   BASE
+========================= */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: black;
   color: white;
-  overflow: hidden;
+  overflow-x: hidden;
   text-align: center;
 }
 
-/* 🌆 SYNTH GRID (PERFORMANCE OPTIMIERT) */
+/* =========================
+   SYNTH GRID BACKGROUND
+========================= */
 body::before {
   content: "";
   position: fixed;
@@ -25,9 +34,10 @@ body::before {
 
   animation: moveGrid 6s linear infinite;
   will-change: transform;
+  z-index: 0;
 }
 
-/* Sonne*/
+/* Sonne */
 body::after {
   content: "";
   position: fixed;
@@ -37,7 +47,6 @@ body::after {
 
   width: 300px;
   height: 300px;
-
   border-radius: 50%;
 
   background: radial-gradient(
@@ -51,7 +60,9 @@ body::after {
   z-index: 0;
 }
 
-/* 🎬 START SCREEN */
+/* =========================
+   START SCREEN
+========================= */
 #start-screen {
   position: absolute;
   inset: 0;
@@ -65,63 +76,112 @@ body::after {
 }
 
 .title {
-  font-size: 80px;
+  font-size: clamp(40px, 6vw, 80px);
   color: #0ff;
   text-shadow: 0 0 15px #0ff;
 }
 
 .press-start {
-  font-size: 24px;
-  color: #fff;
+  font-size: 20px;
+  color: white;
   animation: blink 1s infinite;
 }
 
-/* MAIN UI */
-.hidden {
-  display: none;
-}
+/* =========================
+   HEADER
+========================= */
+header,
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 
-/* HEADER */
-header {
   padding: 20px;
   background: rgba(0,0,0,0.7);
-  box-shadow: 0 0 12px #0ff;
+  box-shadow: 0 0 15px #0ff;
+
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
-/* GAME GRID */
+/* GitHub Button */
+.github-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+
+  margin-left: 15px;
+
+  border-radius: 10px;
+  color: #0ff;
+  text-decoration: none;
+
+  transition: 0.15s ease;
+}
+
+.github-link:hover {
+  background: #0ff;
+  color: black;
+  transform: scale(1.1);
+}
+
+/* =========================
+   GAME GRID
+========================= */
 .game-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
   padding: 20px;
+
   position: relative;
   z-index: 1;
 }
 
-/* 🎮 GAME CARD (SNAPPY PERFORMANCE) */
+/* =========================
+   GAME CARD
+========================= */
 .game-card {
   background: rgba(0,0,0,0.6);
   border: 2px solid #0ff;
   border-radius: 15px;
-  padding: 40px;
-  cursor: pointer;
-  font-size: 20px;
 
-  transition: transform 0.1s ease-out, box-shadow 0.1s ease-out;
+  min-height: 120px;
+  padding: 20px;
+
+  font-size: 18px;
+  font: bold 20px Arial, sans-serif;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   box-shadow: 0 0 10px #0ff;
+
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
   will-change: transform;
+}
+
+a.game-card {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .game-card:hover {
   background: #0ff;
   color: black;
-  transform: scale(1.1);
+  transform: translateY(-5px);
   box-shadow: 0 0 25px #0ff;
 }
 
-/* 🔳 OVERLAY GRID (FEIN + LEICHT) */
+/* =========================
+   OVERLAY GRID
+========================= */
 .overlay-grid {
   position: fixed;
   inset: 0;
@@ -133,47 +193,23 @@ header {
     linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
 
   background-size: 10px 10px;
-
-  will-change: transform;
 }
 
-/* ✨ ANIMATIONEN */
+/* =========================
+   UTIL
+========================= */
+.hidden {
+  display: none;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
 @keyframes blink {
-  50% {
-    opacity: 0;
-  }
+  50% { opacity: 0; }
 }
 
 @keyframes moveGrid {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 0 40px;
-  }
-}
-
-/* Github Icon */ 
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-
-  padding: 20px;
-  background: rgba(0,0,0,0.7);
-  box-shadow: 0 0 15px #0ff;
-}
-
-/* GitHub Icon */
-.github-link {
-  color: #0ff;
-  font-size: 28px;
-  text-decoration: none;
-  transition: 0.1s ease-out;
-}
-
-.github-link:hover {
-  transform: scale(1.2);
-  text-shadow: 0 0 10px #0ff;
+  from { background-position: 0 0; }
+  to { background-position: 0 40px; }
 }
