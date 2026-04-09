@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Arcade</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- START SCREEN -->
+  <div id="start-screen" onclick="startArcade()">
+    <h1 class="title">ARCADE</h1>
+    <p class="press-start">▶ PRESS START ◀</p>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div id="main-content" class="hidden">
+    <header>
+      <h1>🕹️ Arcade Games<a href="https://github.com/DEINE-ORG" target="_blank" class="github-link">
+      <span class="mdi mdi-github"></span>
+      </a></h1>
+    </header>
+
+    <main class="game-container">
+      <div class="game-card" onclick="startGame('snake')">Snake</div>
+      <div class="game-card" onclick="startGame('pong')">Pong</div>
+      <div class="game-card" onclick="startGame('tetris')">Tetris</div>
+    </main>
+  </div>
+
+  <div class="overlay-grid"></div>
+  <script src="script.js"></script>
+</body>
+</html>
