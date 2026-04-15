@@ -40,6 +40,9 @@
 !/.github/PULL_REQUEST_TEMPLATE.md
 !/.gitattributes
 !/.gitignore
+!/assets/apple-touch-icon.png
+!/assets/play_a_game-favicon-32x32.png
+!/assets/play_a_game-favicon.png
 !/assets/Game-Bilder/moorhuhn-favicon.png
 !/index.html
 !/LICENSE

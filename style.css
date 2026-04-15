@@ -134,9 +134,13 @@ header,
 ========================= */
 .game-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(16, 1fr);
+  /*grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));*/
   gap: 15px;
   padding: 20px;
+
+  max-width: 2500px;
+  margin: 0 auto;      /* 👈 zentriert */
 
   position: relative;
   z-index: 1;
@@ -146,6 +150,9 @@ header,
    GAME CARD
 ========================= */
 .game-card {
+  grid-column: span 4; /* Standard: 4 von 16 → 4 Karten pro Reihe, oder # grid-column: span 8; // halbe Breite //, # grid-column: span 16; // volle Breite // */
+  grid-row: span 2;
+
   background: rgba(0,0,0,0.6);
   border: 2px solid #0ff;
   border-radius: 15px;
@@ -158,6 +165,7 @@ header,
   cursor: pointer;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
@@ -167,6 +175,24 @@ header,
 
   transition: transform 0.15s ease, box-shadow 0.15s ease;
   will-change: transform;
+
+  overflow: hidden; /*ist für das image*/
+}
+
+/* Bild als Hintergrund */
+.game-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+}
+
+/* Text darüber */
+.game-card p {
+  position: relative;
+  z-index: 2;
 }
 
 a.game-card {
@@ -181,12 +207,44 @@ a.game-card {
   box-shadow: 0 0 25px #0ff;
 }
 
-.game-link {
-  display: block;
+.issue-link {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+
+  color: #0ff;
+  font-size: 20px;
+
+  z-index: 2;
 }
 
-/*muss noch das bild kleiner machen und den issue button in die karte legen*/
+.issue-link:hover {
+  color: greenyellow;
+  transform: scale(1.2);
+}
 
+/* Tablet */
+@media (max-width: 1200px) {
+  .game-container {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .game-card {
+    grid-column: span 4; /* 2 Karten pro Reihe */
+  }
+}
+
+/* Handy */
+@media (max-width: 800px) {
+  .game-container {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 100%;   /* volle Breite */
+  }
+
+  .game-card {
+    grid-column: span 4; /* 1 Karte pro Reihe */
+  }
+}
 
 /* =========================
    OVERLAY GRID
