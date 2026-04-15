@@ -135,6 +135,7 @@ header,
 .game-container {
   display: grid;
   grid-template-columns: repeat(16, 1fr);
+  /*grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));*/
   gap: 15px;
   padding: 20px;
 
@@ -223,7 +224,7 @@ a.game-card {
 }
 
 /* Tablet */
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .game-container {
     grid-template-columns: repeat(8, 1fr);
   }
@@ -234,7 +235,7 @@ a.game-card {
 }
 
 /* Handy */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .game-container {
     grid-template-columns: repeat(4, 1fr);
     max-width: 100%;   /* volle Breite */
