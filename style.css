@@ -135,9 +135,11 @@ header,
 .game-container {
   display: grid;
   grid-template-columns: repeat(16, 1fr);
-  /* grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); */
   gap: 15px;
   padding: 20px;
+
+  max-width: 2500px;
+  margin: 0 auto;      /* 👈 zentriert */
 
   position: relative;
   z-index: 1;
@@ -204,11 +206,6 @@ a.game-card {
   box-shadow: 0 0 25px #0ff;
 }
 
-/* .game-link {
-  display: block;
-} */
-
-/*brauche noch ein besseres icon für Issues*/
 .issue-link {
   position: absolute;
   bottom: 10px;
@@ -225,8 +222,6 @@ a.game-card {
   transform: scale(1.2);
 }
 
-/*muss noch das bild kleiner machen und den issue button in die karte legen*/
-
 /* Tablet */
 @media (max-width: 1000px) {
   .game-container {
@@ -242,6 +237,7 @@ a.game-card {
 @media (max-width: 600px) {
   .game-container {
     grid-template-columns: repeat(4, 1fr);
+    max-width: 100%;   /* volle Breite */
   }
 
   .game-card {
