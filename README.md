@@ -1,3 +1,5 @@
+# play a game
+
 ![Publish Status](https://github.com/PixelPulps/play_a_game/actions/workflows/publish.yml/badge.svg)
 
 
