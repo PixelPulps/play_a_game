@@ -11,18 +11,15 @@
 ##############################################
 # Ordner ignorieren
 ##############################################
-# /.Releases/
-# *.Releases/
-# !*/.Releases/
-# /.aLT/
-# *.aLT/
-# !*/.aLT/
+
+
 
 ##############################################
 # Verzeichnisse wieder erlauben                  # !*/Unterordner/
 ##############################################
 !*/.github/ISSUE_TEMPLATE/
 !*/.github/workflows/
+!*/.Release/
 !*/assets/Game-Bilder/
 !*/assets/images/
 
@@ -40,6 +37,7 @@
 !/.github/ISSUE_TEMPLATE/task.md
 !/.github/PULL_REQUEST_TEMPLATE.md
 !/.github/workflows/publish.yml
+!/.Release/play_a_game.tar.gz
 !/.gitattributes
 !/.gitignore
 !/assets/apple-touch-icon.png
