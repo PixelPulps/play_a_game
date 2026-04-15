@@ -2,7 +2,15 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Arcade</title>
+  <title>play a game</title>
+
+  <!-- favicon -->
+  <link rel="icon" href="assets/play_a_game-favicon.png" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/play_a_game-favicon-32x32.png">
+
+  <!-- 🔥 Wichtig für iPhone -->
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -10,14 +18,14 @@
 
   <!-- START SCREEN -->
   <div id="start-screen" onclick="startArcade()">
-    <h1 class="title">ARCADE</h1>
+    <h1 class="title">play a game</h1>
     <p class="press-start">▶ PRESS START ◀</p>
   </div>
 
   <!-- MAIN CONTENT -->
   <div id="main-content" class="hidden">
     <header>
-      <h1>🕹️ Arcade Games<a href="https://github.com/PixelPulps" target="_blank" class="github-link">
+      <h1>🕹️ Games<a href="https://github.com/PixelPulps" target="_blank" class="github-link">
       <span class="mdi mdi-github"></span>
       </a></h1>
     </header>
@@ -25,27 +33,23 @@
   <main>
     <div class="game-container">
 
-      <a href="https://pixelpulps.github.io/moorhuhn/" class="game-card">
-      
-      <!-- Bild -->
-      <img src="assets/Game-Bilder/moorhuhn-favicon.png" alt="Moorhuhn Preview" class="game-image">
+      <div class="game-card" onclick="window.location.href='https://pixelpulps.github.io/moorhuhn/'">
 
-      <!-- Titel -->
-      <p>Moorhuhn</p>
+        <img src="assets/Game-Bilder/moorhuhn-favicon.png" class="game-image">
 
-      <!-- Issue Icon -->
-      <a href="https://github.com/PixelPulps/moorhuhn/issues" target="_blank" class="issue-link">
-        <span class="mdi mdi-bug"></span>
-      </a>
+        <p>Moorhuhn</p>
+
+        <a href="https://github.com/PixelPulps/moorhuhn/issues"
+          target="_blank"
+          class="issue-link"
+          onclick="event.stopPropagation()">
+          <span class="mdi mdi-github"></span>
+        </a>
+
+      </div>
 
     </div>
-
-    <!-- <a href="#" class="game-card">
-      <p>Bierpong</p>
-    </a> -->
-
   </main>
-  </div>
 
   <div class="overlay-grid"></div>
   <script src="script.js"></script>
