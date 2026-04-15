@@ -1,14 +1,14 @@
-<!-- # TEMPLATE
+# play a game
 
-[![Gitea](https://img.shields.io/badge/Gitea-609926?logo=gitea&logoColor=white)](https://about.gitea.com/)
-[![Open Issues](https://img.shields.io/badge/GitHub-Issues-red?logo=github)](https://github.com/sonnytricky/TEMPLATES/issues/new)
-[![Lint Workflow](https://github.com/sonnytricky/TEMPLATE/actions/workflows/lint.yml/badge.svg)](https://github.com/sonnytricky/TEMPLATE/actions/workflows/lint.yml) -->
+![Publish Status](https://github.com/PixelPulps/play_a_game/actions/workflows/publish.yml/badge.svg)
+![Release Status](https://github.com/PixelPulps/play_a_game/actions/workflows/release.yml/badge.svg)
+![Version](https://img.shields.io/github/v/release/sonnytricky/cheatsheets?label=version&style=flat-square)
 
 
-<!-- 
 <p align="center">
-  <img src=".images/example.png"
+  <img src="assets/images/play_a_game.png"
        alt="Ein Bild"
        width=""
        height="150">
-</p> -->
+</p>
+

@@ -24,6 +24,7 @@
 !*/.github/ISSUE_TEMPLATE/
 !*/.github/workflows/
 !*/assets/Game-Bilder/
+!*/assets/images/
 
 
 ##############################################
@@ -45,6 +46,7 @@
 !/assets/play_a_game-favicon-32x32.png
 !/assets/play_a_game-favicon.png
 !/assets/Game-Bilder/moorhuhn-favicon.png
+!/assets/images/play_a_game.png
 !/index.html
 !/LICENSE
 !/README.md
