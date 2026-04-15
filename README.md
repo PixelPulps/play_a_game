@@ -11,6 +11,7 @@
   <img src="assets/images/play_a_game.png"
        alt="Ein Bild"
        width=""
-       height="300">
+       height="300"
+       href=https://pixelpulps.github.io/play_a_game/>
 </p>
 
