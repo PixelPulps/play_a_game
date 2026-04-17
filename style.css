@@ -134,8 +134,9 @@ header,
 ========================= */
 .game-container {
   display: grid;
-  grid-template-columns: repeat(16, 1fr);
-  /*grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));*/
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-flow: row;
+
   gap: 15px;
   padding: 20px;
 
@@ -150,8 +151,8 @@ header,
    GAME CARD
 ========================= */
 .game-card {
-  grid-column: span 4; /* Standard: 4 von 16 → 4 Karten pro Reihe, oder # grid-column: span 8; // halbe Breite //, # grid-column: span 16; // volle Breite // */
-  grid-row: span 2;
+  grid-column: auto; /*span 4; /* Standard: 4 von 16 → 4 Karten pro Reihe, oder # grid-column: span 8; // halbe Breite //, # grid-column: span 16; // volle Breite // */
+  /* grid-row: span 2; */
 
   background: rgba(0,0,0,0.6);
   border: 2px solid #0ff;
