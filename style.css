@@ -132,7 +132,7 @@ header,
 /* =========================
    GAME GRID
 ========================= */
-.game-container {
+/* .game-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-flow: row;
@@ -141,7 +141,24 @@ header,
   padding: 20px;
 
   max-width: 2500px;
-  margin: 0 auto;      /* 👈 zentriert */
+  margin: 0 auto;      
+
+  position: relative;
+  z-index: 1;
+} */
+
+.game-container {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(400px, 420px));
+
+  gap: 15px;
+  padding: 20px;
+
+  max-width: 2000px;
+  margin: 0 auto;
+
+  /* justify-content: center; */
 
   position: relative;
   z-index: 1;
@@ -152,11 +169,14 @@ header,
 ========================= */
 .game-card {
   grid-column: auto; /*span 4; /* Standard: 4 von 16 → 4 Karten pro Reihe, oder # grid-column: span 8; // halbe Breite //, # grid-column: span 16; // volle Breite // */
-  /* grid-row: span 2; */
+  /*grid-row: span 2; */
 
   background: rgba(0,0,0,0.6);
   border: 2px solid #0ff;
   border-radius: 15px;
+
+  max-width: 400px;
+  width: 100%;
 
   min-height: 120px;
   padding: 20px;
