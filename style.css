@@ -164,6 +164,40 @@ header,
   z-index: 1;
 }
 
+.game-container-test {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(350px, 392px));
+
+  gap: 10px;
+  padding: 10px;
+
+  max-width: 1640px;
+  margin: 0 auto;
+
+  /* justify-content: center; */
+
+  position: relative;
+  z-index: 1;
+}
+
+.game-container-test1 {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1600px));
+
+  gap: 10px;
+  padding: 10px;
+
+  max-width: 1640px;
+  margin: 0 auto;
+
+  /* justify-content: center; */
+
+  position: relative;
+  z-index: 1;
+}
+
 /* =========================
    GAME CARD
 ========================= */
@@ -193,6 +227,72 @@ header,
   position: relative;
 
   box-shadow: 0 0 10px #0ff;
+
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  will-change: transform;
+
+  overflow: hidden; /*ist für das image*/
+}
+
+.game-card-test {
+    grid-column: auto; /*span 4; /* Standard: 4 von 16 → 4 Karten pro Reihe, oder # grid-column: span 8; // halbe Breite //, # grid-column: span 16; // volle Breite // */
+  /*grid-row: span 2; */
+
+  background: rgba(0,0,0,0.6);
+  border: 2px solid #0ff;
+  border-radius: 15px;
+
+  max-width: 400px;
+  width: 100%;
+
+  min-height: 120px;
+  padding: 10px;
+
+  font-size: 18px;
+  font: bold 20px Arial, sans-serif;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  box-shadow: 0 0 5px #0ff;
+
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  will-change: transform;
+
+  overflow: hidden; /*ist für das image*/
+}
+
+.game-card-test-1 {
+    grid-column: auto; /*span 4; /* Standard: 4 von 16 → 4 Karten pro Reihe, oder # grid-column: span 8; // halbe Breite //, # grid-column: span 16; // volle Breite // */
+  /*grid-row: span 2; */
+
+  background: rgba(0,0,0,0.6);
+  border: 2px solid #0ff;
+  border-radius: 15px;
+
+  max-width: 1600px;
+  width: 100%;
+
+  min-height: 120px;
+  padding: 10px;
+
+  font-size: 18px;
+  font: bold 20px Arial, sans-serif;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  box-shadow: 0 0 5px #0ff;
 
   transition: transform 0.15s ease, box-shadow 0.15s ease;
   will-change: transform;
@@ -244,28 +344,28 @@ a.game-card {
   transform: scale(1.2);
 }
 
-/* Tablet */
+/* Tablet *//*
 @media (max-width: 1200px) {
   .game-container {
     grid-template-columns: repeat(8, 1fr);
   }
 
   .game-card {
-    grid-column: span 4; /* 2 Karten pro Reihe */
+    grid-column: span 4; /* 2 Karten pro Reihe *//*
   }
 }
-
-/* Handy */
+*/
+/* Handy *//*
 @media (max-width: 800px) {
   .game-container {
     grid-template-columns: repeat(4, 1fr);
-    max-width: 100%;   /* volle Breite */
+    max-width: 100%;   /* volle Breite *//*
   }
 
   .game-card {
-    grid-column: span 4; /* 1 Karte pro Reihe */
+    grid-column: span 4; /* 1 Karte pro Reihe *//*
   }
-}
+} */
 
 /* =========================
    OVERLAY GRID
