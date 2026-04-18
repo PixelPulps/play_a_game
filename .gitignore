@@ -1,0 +1,55 @@
+##############################################
+# Alles ignorieren                               # * bedeutet alles
+##############################################
+*
+
+##############################################
+# Verzeichnisse wieder erlauben
+##############################################
+!*/
+
+##############################################
+# Ordner ignorieren
+##############################################
+
+
+
+##############################################
+# Verzeichnisse wieder erlauben                  # !*/Unterordner/
+##############################################
+!*/.github/ISSUE_TEMPLATE/
+!*/.github/workflows/
+!*/.Release/
+!*/assets/Game-Bilder/
+!*/assets/images/
+
+
+##############################################
+# Ausnahme: diese Dateien NICHT ignorieren
+##############################################
+# Beispiel:
+# - für Dateien in Unterordnern                  # !/Pfad/zur/Datein.txt
+# - für einzelne Dateien                         # !Datein.txt
+##############################################
+!/.github/ISSUE_TEMPLATE/bug_report.md
+!/.github/ISSUE_TEMPLATE/feature_request.md
+!/.github/ISSUE_TEMPLATE/idea.md
+!/.github/ISSUE_TEMPLATE/task.md
+!/.github/PULL_REQUEST_TEMPLATE.md
+!/.github/workflows/publish.yml
+!/.Release/play_a_game.tar.gz
+!/.gitattributes
+!/.gitignore
+!/assets/apple-touch-icon.png
+!/assets/play_a_game-favicon-32x32.png
+!/assets/play_a_game-favicon.png
+!/assets/Game-Bilder/moorhuhn-favicon.png
+!/assets/Game-Bilder/hangman.jpg
+!/assets/Game-Bilder/Test-card.jpg
+!/assets/images/play_a_game.png
+!/index.html
+!/LICENSE
+!/README.md
+!/script.js
+!/style.css
+
