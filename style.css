@@ -170,7 +170,7 @@ header,
    GAME CARD
 ========================= */
 .game-card {
-  grid-column: auto; /*span 4; /* Standard: 4 von 16 → 4 Karten pro Reihe, oder # grid-column: span 8; // halbe Breite //, # grid-column: span 16; // volle Breite // */
+  /*grid-column: auto;*/ /*span 4; /* Standard: 4 von 16 → 4 Karten pro Reihe, oder # grid-column: span 8; // halbe Breite //, # grid-column: span 16; // volle Breite // */
   /*grid-row: span 2; */
 
   background: rgba(0,0,0,0.6);
@@ -256,7 +256,7 @@ a.game-card {
     grid-column: span 4; /* 2 Karten pro Reihe *//*
   }
 }
-*/
+
 /* Handy *//*
 @media (max-width: 800px) {
   .game-container {
