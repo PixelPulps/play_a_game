@@ -132,7 +132,7 @@ header,
 /* =========================
    GAME GRID
 ========================= */
-.game-container {
+/* .game-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-flow: row;
@@ -141,22 +141,44 @@ header,
   padding: 20px;
 
   max-width: 2500px;
-  margin: 0 auto;      /* 👈 zentriert */
+  margin: 0 auto;      
+
+  position: relative;
+  z-index: 1;
+} */
+
+.game-container {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(350px, 392px));
+
+  gap: 10px;
+  padding: 20px;
+
+  max-width: 1640px;
+  margin: 0 auto;
+
+  justify-content: center;
 
   position: relative;
   z-index: 1;
 }
 
+
+
 /* =========================
    GAME CARD
 ========================= */
 .game-card {
-  grid-column: auto; /*span 4; /* Standard: 4 von 16 → 4 Karten pro Reihe, oder # grid-column: span 8; // halbe Breite //, # grid-column: span 16; // volle Breite // */
-  /* grid-row: span 2; */
+  /*grid-column: auto;*/ /*span 4; /* Standard: 4 von 16 → 4 Karten pro Reihe, oder # grid-column: span 8; // halbe Breite //, # grid-column: span 16; // volle Breite // */
+  /*grid-row: span 2; */
 
   background: rgba(0,0,0,0.6);
   border: 2px solid #0ff;
   border-radius: 15px;
+
+  max-width: 400px;
+  width: 100%;
 
   min-height: 120px;
   padding: 20px;
@@ -179,6 +201,29 @@ header,
 
   overflow: hidden; /*ist für das image*/
 }
+
+/*TAG*/
+.game-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: bold;
+
+  background: rgba(0, 255, 255, 0.9);
+  color: black;
+
+  border-radius: 6px;
+  box-shadow: 0 0 8px #0ff;
+
+  z-index: 3;
+}
+
+.game-tag.alpha { background: red; }
+.game-tag.beta { background: orange; }
+.game-tag.release { background: #0ff; } 
 
 /* Bild als Hintergrund */
 .game-image {
@@ -224,28 +269,28 @@ a.game-card {
   transform: scale(1.2);
 }
 
-/* Tablet */
+/* Tablet *//*
 @media (max-width: 1200px) {
   .game-container {
     grid-template-columns: repeat(8, 1fr);
   }
 
   .game-card {
-    grid-column: span 4; /* 2 Karten pro Reihe */
+    grid-column: span 4; /* 2 Karten pro Reihe *//*
   }
 }
 
-/* Handy */
+/* Handy *//*
 @media (max-width: 800px) {
   .game-container {
     grid-template-columns: repeat(4, 1fr);
-    max-width: 100%;   /* volle Breite */
+    max-width: 100%;   /* volle Breite *//*
   }
 
   .game-card {
-    grid-column: span 4; /* 1 Karte pro Reihe */
+    grid-column: span 4; /* 1 Karte pro Reihe *//*
   }
-}
+} */
 
 /* =========================
    OVERLAY GRID

@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <!-- START SCREEN -->
@@ -36,11 +37,13 @@
     </header>
 
   <main>
-    <div class="game-container">
+    <div class="game-container">                                                                  <!-- Container Anfang -->
 
       <div class="game-card" onclick="window.location.href='https://pixelpulps.github.io/moorhuhn/'">
 
         <img src="assets/Game-Bilder/moorhuhn-favicon.png" class="game-image">
+
+        <span class="game-tag release">v1.0.0</span>                                              <!-- mögliche Tags = release, alpha, beta -->
 
         <p>Moorhuhn</p>
 
@@ -53,28 +56,62 @@
 
       </div>
 
-      </div>
-          <div class="game-container">
+      <div class="game-card" onclick="window.location.href='https://pixelpulps.github.io/HANGMAN/'">
 
-        <div class="game-card" onclick="window.location.href='https://pixelpulps.github.io/HANGMAN/'">
+        <img src="assets/Game-Bilder/hangman.jpg" class="game-image">
+        
+        <span class="game-tag alpha">v1.0.0-dev</span>                                              <!-- mögliche Tags = release, alpha, beta -->
 
-          <img src="assets/Game-Bilder/hangman.jpg" class="game-image">
+        <p>HANGMAN</p>
 
-          <p>Moorhuhn</p>
-
-          <a href="https://github.com/PixelPulps/HANGMAN/issues"
-            target="_blank"
-            class="issue-link"
-            onclick="event.stopPropagation()">
-            <span class="mdi mdi-github"></span>
-          </a>
-
-        </div>
+        <a href="https://github.com/PixelPulps/HANGMAN/issues"
+          target="_blank"
+          class="issue-link"
+          onclick="event.stopPropagation()">
+          <span class="mdi mdi-github"></span>
+        </a>
 
       </div>
+
+      <!-- <div class="game-card" onclick="window.location.href=''">
+
+        <img src="assets/Game-Bilder/Test-card.jpg" class="game-image">
+
+        <span class="game-tag release">v1.0.0</span>                                              <!-- mögliche Tags = release, alpha, beta --><!--
+
+        <p>Test</p>
+
+        <a href=""
+          target="_blank"
+          class="issue-link"
+          onclick="event.stopPropagation()">
+          <span class="mdi mdi-github"></span>
+        </a>
+
+      </div>
+
+      <div class="game-card" onclick="window.location.href=''">
+
+        <img src="assets/Game-Bilder/Test-card.jpg" class="game-image">
+
+        <span class="game-tag release">v1.0.0</span>                                              <!-- mögliche Tags = release, alpha, beta --><!--
+
+        <p>Test</p>
+
+        <a href=""
+          target="_blank"
+          class="issue-link"
+          onclick="event.stopPropagation()">
+          <span class="mdi mdi-github"></span>
+        </a>
+
+      </div>
+    </div>                                                                                        <!-- Container Ende -->
+
   </main>
 
   <div class="overlay-grid"></div>
   <script src="script.js"></script>
+
 </body>
 </html>
