@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>play a game</title>
+
+  <!-- favicon -->
+  <link rel="icon" href="assets/play_a_game-favicon.png" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/play_a_game-favicon-32x32.png">
+
+  <!-- 🔥 Wichtig für iPhone -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- START SCREEN -->
+  <div id="start-screen" onclick="startArcade()">
+    <h1 class="title">play a game</h1>
+    <p class="press-start">▶ PRESS START ◀</p>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div id="main-content" class="hidden">
+    <header>
+      <h1>🕹️ Games<a href="https://github.com/PixelPulps" target="_blank" class="github-link">
+      <span class="mdi mdi-github"></span>
+      </a></h1>
+    </header>
+
+  <main>
+    <div class="game-container">                                                                  <!-- Container Anfang -->
+
+      <div class="game-card" onclick="window.location.href='https://pixelpulps.github.io/moorhuhn/'">
+
+        <img src="assets/Game-Bilder/moorhuhn-favicon.png" class="game-image-moorhuhn">
+
+        <span class="game-tag release">v1.0.0</span>                                              <!-- mögliche Tags = release, alpha, beta -->
+
+        <p>Moorhuhn</p>
+
+        <a href="https://github.com/PixelPulps/moorhuhn/issues"
+          target="_blank"
+          class="issue-link"
+          onclick="event.stopPropagation()">
+          <span class="mdi mdi-github"></span>
+        </a>
+
+      </div>
+
+      <div class="game-card" onclick="window.location.href='https://pixelpulps.github.io/HANGMAN/'">
+
+        <img src="assets/Game-Bilder/hangman.jpg" class="game-image">
+        
+        <span class="game-tag alpha">v1.0.0-dev</span>                                              <!-- mögliche Tags = release, alpha, beta -->
+
+        <p>HANGMAN</p>
+
+        <a href="https://github.com/PixelPulps/HANGMAN/issues"
+          target="_blank"
+          class="issue-link"
+          onclick="event.stopPropagation()">
+          <span class="mdi mdi-github"></span>
+        </a>
+
+      </div>
+
+      <div class="game-card" onclick="window.location.href='https://pixelpulps.github.io/Breakout/'">
+
+        <img src="assets/Game-Bilder/Breakout.png" class="game-image">
+        
+        <span class="game-tag release">v1.0.0</span>                                              <!-- mögliche Tags = release, alpha, beta -->
+
+        <p>Breakout</p>
+
+        <a href="https://github.com/PixelPulps/Breakout/issues"
+          target="_blank"
+          class="issue-link"
+          onclick="event.stopPropagation()">
+          <span class="mdi mdi-github"></span>
+        </a>
+
+      </div>
+
+      <!-- <div class="game-card" onclick="window.location.href=''">
+
+        <img src="assets/Game-Bilder/Test-card.jpg" class="game-image">
+
+        <span class="game-tag release">v1.0.0</span>                                              <!-- mögliche Tags = release, alpha, beta --><!--
+
+        <p>Test</p>
+
+        <a href=""
+          target="_blank"
+          class="issue-link"
+          onclick="event.stopPropagation()">
+          <span class="mdi mdi-github"></span>
+        </a>
+
+      </div>
+
+      <div class="game-card" onclick="window.location.href=''">
+
+        <img src="assets/Game-Bilder/Test-card.jpg" class="game-image">
+
+        <span class="game-tag release">v1.0.0</span>                                              <!-- mögliche Tags = release, alpha, beta --><!--
+
+        <p>Test</p>
+
+        <a href=""
+          target="_blank"
+          class="issue-link"
+          onclick="event.stopPropagation()">
+          <span class="mdi mdi-github"></span>
+        </a>
+
+      </div>
+    </div>                                                                                        <!-- Container Ende -->
+
+  </main>
+
+  <div class="overlay-grid"></div>
+  <script src="script.js"></script>
+
+</body>
+</html>
