@@ -37,6 +37,7 @@
 !/.github/ISSUE_TEMPLATE/task.md
 !/.github/PULL_REQUEST_TEMPLATE.md
 !/.github/workflows/publish.yml
+!/.github/workflows/release.yml
 !/.Release/play_a_game.tar.gz
 !/.gitattributes
 !/.gitignore
