@@ -44,15 +44,8 @@ Jedes Spiel befindet sich in einer eigenen Repo.
 
 ## ⚖️ Lizenzen
 
-**Hinweis zu Lizenzen:**
-
-Die Spiele in dieser Sammlung stammen aus unterschiedlichen Projekten und können jeweils eigenen Lizenzbedingungen unterliegen. Die jeweiligen Lizenzen sind in den entsprechenden Unterverzeichnissen oder den verlinkten Original-Repositories dokumentiert. Es liegt in der Verantwortung des Nutzers, diese zu beachten.
-
-
----
-
-## ⭐ Hinweis
-
-Dieses Projekt dient hauptsächlich zu Lern- und Demonstrationszwecken.
+- Die Spiele in dieser Sammlung stammen aus unterschiedlichen Projekten und können jeweils eigenen Lizenzbedingungen unterliegen. 
+- Die jeweiligen Lizenzen sind in den entsprechenden Unterverzeichnissen oder den verlinkten Original-Repositories dokumentiert. 
+- Es liegt in der Verantwortung des Nutzers, diese zu beachten.
 
 ---
