@@ -1,6 +1,8 @@
 # 🎮 Play a Game
 
 ![Publish Status](https://github.com/PixelPulps/play_a_game/actions/workflows/publish.yml/badge.svg)
+![GitHub release](https://img.shields.io/github/v/release/PixelPulps/play_a_game?label=release)
+![Release](https://img.shields.io/github/v/release/PixelPulps/play_a_game)
 
 ---
 
