@@ -229,8 +229,17 @@ header,
 .game-image {
   position: absolute;
   inset: 0;
-  width: 100%;
-  height: 100%;
+  max-width: 100%;  /* war auf width: 100% */
+  height: auto;     /* war auf height: 100% */
+  object-fit: cover;
+  opacity: 0.3;
+}
+
+.game-image-moorhuhn {
+  position: absolute;
+  inset: 0;
+  width: 100%;  /* war auf width: 100% */
+  height: 100%;     /* war auf height: 100% */
   object-fit: cover;
   opacity: 0.3;
 }
