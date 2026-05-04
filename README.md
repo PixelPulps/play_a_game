@@ -2,8 +2,11 @@
 
 ![Publish Status](https://github.com/PixelPulps/play_a_game/actions/workflows/publish.yml/badge.svg)
 
+---
 
+### Eine Spiele-Sammlung, die Spiele wurden teils in Javascript oder mit der Godot Engine 4.6 erstellt.
 
+---
 
 
 
@@ -15,10 +18,6 @@
        href=https://pixelpulps.github.io/play_a_game/>
 </p>
 
-
----
-
-# Eine Spiele-Sammlung, die Spiele wurden teils in Javascript oder mit der Godot Engine 4.6 erstellt.
 
 ---
 
